@@ -1,0 +1,24 @@
+!C: Example Import 
+IMPORT-ExampleImport.pini 
+SECTION-MySection
+    !C: Defines a key called MyKey with the string valuue of "4" 
+    KEY:MyKey:4
+    SECTION-TEST 
+        KEY:HELLO:48
+        SECTION-TEST2
+            KEY:TEST:58
+        END 
+    END
+
+    NEW-MyStruct-MyInstance:Hello World args-1-World-55-$R:HiMom!:Lol
+END 
+STRUCT-MyStruct 
+    KEY:MyFirstValue 
+    KEY:MySecondValue
+    KEY:MyThirdValue
+END 
+STRUCT-EXAM 
+    KEY:NAME
+    KEY:QUESTIONAMOUNT 
+    KEY:QUESTIONFILEPATHS 
+END 

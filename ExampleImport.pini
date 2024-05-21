@@ -1,0 +1,10 @@
+!C: This is a example Pini Struct Library 
+
+STRUCT-LibStruct 
+    KEY:LibKey1
+    KEY:LibKey2
+END 
+STRUCT-AnotherLibStruct 
+    KEY:Libkey3
+    KEY:Libkey4
+END 
