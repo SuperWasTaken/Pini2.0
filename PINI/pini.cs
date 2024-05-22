@@ -246,7 +246,8 @@ namespace PINI
                     {
                         // Import the structs from the specified path 
                         var args = line.Split('-').Skip(1).ToArray();
-                        var path = args[0];
+                        var path = args[0].Trim();
+                    
                         if(File.Exists(path))
                         {
                             Pini temp = new(path);
@@ -259,7 +260,7 @@ namespace PINI
                             }
                         }
                     }
-
+                    
 
                     if(line.StartsWith("KEY:"))
                     {
@@ -326,12 +327,7 @@ namespace PINI
                 name = name.Trim();
                 var itemname = item.Key.Trim();
 
-                if(name != itemname){
-                    Console.WriteLine("Error");
-                    Console.WriteLine(" KEY: " + item.Key);
-                    Console.WriteLine("NAME: " + name);
-                    Console.WriteLine("-------------");
-                }
+                
                 if(name == itemname)  
                 {
                     sec = item.Value;
