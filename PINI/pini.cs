@@ -73,7 +73,7 @@ namespace PINI
                 if(section.GetSection(item,out var ns)) {section = ns;}
                 
             }
-            
+            section.Lex();
             return true;
         }
     }
